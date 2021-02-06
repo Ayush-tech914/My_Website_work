@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color:crimson;
+        font-size: 30px;
+        background-image: linear-gradient(315deg, red,orange,yellow,green,blue,indigo,violet) ;
+        background-size:cover;
+        text-align: center;
+    }
+    .conta{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 100px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    div{
+        width: 300px;
+        height: 300px;
+    }
+    .cr{
+        background-image: radial-gradient(yellow , red 33%,orange,yellow );
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    span:hover{
+        color: rgb(255, 255, 255);
+    }
+    a{
+        text-decoration: none;
+        color: crimson;
+    }
+</style>
+<body>
+    <marquee behavior="speed" direction=""><h1><a href="HOMEWORK.html"> Scalable Vector Graphics</a></h1></marquee>
+    <section class="conta">
+        <div>
+            <svg width="300" height="300">
+                <path d="M150 0 L75 200 L225 200 Z" ></path>
+            </svg>
+            <span>PATH</span>
+        </div>
+        <div>
+            <svg width="400" height="300">
+                <path id="lineAB" d="M 100 350 l 150 -300" stroke="red"
+                    stroke-width="3" fill="none" />
+                <path id="lineBC" d="M 250 50 l 150 300" stroke="red"
+                    stroke-width="3" fill="none" />
+                <path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
+                    fill="none" />
+                <path d="M 100 350 q 150 -300 300 0" stroke="maroon"
+                    stroke-width="5" fill="none" />
+                <!-- Mark relevant points -->
+                <g stroke="black" stroke-width="3" fill="black">
+                    <circle id="pointA" cx="100" cy="350" r="3" />
+                    <circle id="pointB" cx="250" cy="50" r="3" />
+                    <circle id="pointC" cx="400" cy="350" r="3" />
+                </g>
+                    <!-- Label the points -->
+                <g font-size="30" font-family="sans-serif" fill="black" stroke="none"
+                    text-anchor="middle">
+                    <text x="100" y="350" dx="-30">A</text>
+                    <text x="250" y="50" dy="-10">B</text>
+                    <text x="400" y="350" dx="30">C</text>
+                </g>
+            </svg>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <g fill="none">
+                    <path stroke="red" d="M5 20 l215 0" />
+                    <path stroke="black" d="M5 40 l215 0" />
+                    <path stroke="maroon" d="M5 60 l215 0" />
+                </g>
+            </svg>
+            <span>SVG stroke Property</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <g fill="none" stroke="black">
+                    <path stroke-width="2" d="M5 20 l215 0" />
+                    <path stroke-width="4" d="M5 40 l215 0" />
+                    <path stroke-width="6" d="M5 60 l215 0" />
+                </g>
+            </svg>
+            <span>SVG stroke-width Property</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <g fill="none" stroke="black" stroke-width="6">
+                    <path stroke-linecap="butt" d="M5 20 l215 0" />
+                    <path stroke-linecap="round" d="M5 40 l215 0" />
+                    <path stroke-linecap="square" d="M5 60 l215 0" />
+                </g>
+            </svg>
+            <span>SVG stroke-linecap Property</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <g fill="none" stroke="black" stroke-width="4">
+                    <path stroke-dasharray="5,5" d="M5 20 l215 0" />
+                    <path stroke-dasharray="10,10" d="M5 40 l215 0" />
+                    <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
+                </g>
+            </svg>
+            <span>SVG stroke-dasharray Property</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+                    </filter>
+                    </defs>
+                    <rect x="75" y="150" width="90" height="90" stroke="green" stroke-width="3"
+                   fill="red" filter="url(#f1)" />
+            </svg>
+            <span>feGaussianBlur</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <filter id="f1.0" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                    <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                    </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="green" stroke-width="3"
+                   fill="yellow" filter="url(#f1.0)" />
+            </svg>
+            <span>feOffset</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <filter id="f2" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="green" stroke-width="3"
+                   fill="red" filter="url(#f2)" />                   
+            </svg>
+            <span><abbr title="feOffset+feGaussianBlur">FILTER</abbr></span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <filter id="f3" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="green" stroke-width="3"
+                   fill="yellow" filter="url(#f3)" />
+            </svg>
+            <span><abbr title="feOffset+feGaussianBlur(shadow black)">FILTER</abbr></span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <filter id="f4" x="0" y="0" width="200%" height="200%">
+                        <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                        <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                            values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+                        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                </defs>
+                <rect width="90" height="90" stroke="green" stroke-width="3"
+                    fill="yellow" filter="url(#f4)" />
+            </svg>
+            <span><abbr title="feOffset+feGaussianBlur+feColorMatrix">FILTER</abbr></span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <a href="HOMEWORK3.html" >
+                    <text x="150" y="110" fill="rgb(10, 48, 141)" transform="rotate(30 20,40)">Click Here!</text>
+                </a>
+            </svg>
+            <span>For Next Page</span>
+        </div>
+    </section>
+</body>
+</html>

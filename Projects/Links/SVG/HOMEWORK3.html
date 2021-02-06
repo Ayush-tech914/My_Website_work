@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Page</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color:crimson;
+        font-size: 30px;
+        background-image: linear-gradient(315deg, red,orange,yellow,green,blue,indigo,violet) ;
+        background-size:cover;
+        text-align: center;
+    }
+    .conta{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 100px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    div{
+        width: 300px;
+        height: 300px;
+    }
+    .cr{
+        background-image: radial-gradient(yellow , red 33%,orange,yellow );
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    span:hover{
+        color: rgb(255, 255, 255);
+    }
+    a{
+        text-decoration: none;
+        color: crimson;
+    }
+    h2{
+        color: darkgray;
+    }
+</style>
+<body>
+    <marquee behavior="speed" direction=""><h1><a href="HOMEWORK2.html"> Scalable Vector Graphics</a></h1></marquee>
+    <h2>SVG Gradients - Linear</h2>
+    <section class="conta">
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <linearGradient id="grad11" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad11)" />                   
+            </svg>
+            <span>Example 1</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <linearGradient id="grad21" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad21)" />
+            </svg>
+            <span>Example 2</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <linearGradient id="grad31" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad31)" />
+                    <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86">SVG</text>
+            </svg>
+            <span>Example 3</span>
+        </div>
+    </section>
+    <br>
+    <br>
+    <h2>SVG Gradients - Radial</h2>
+    <section class="conta">
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,255);
+                    stop-opacity:0" />
+                    <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+                    </radialGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />                   
+            </svg>
+            <span>Example 1</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <defs>
+                    <radialGradient id="grad2" cx="20%" cy="30%" r="30%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,255);
+                    stop-opacity:0" />
+                    <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+                    </radialGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+            </svg>
+            <span>Example 2</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <a href="profile.html" >
+                    <defs>
+                        <radialGradient id="grad3" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:rgb(0, 0, 255);
+                        stop-opacity:0" />
+                        <stop offset="100%" style="stop-color:rgb(255, 0, 0);stop-opacity:1" />
+                        </radialGradient>
+                        </defs>
+                    <text x="150" y="110" fill="url(#grad3)" transform="rotate(-30 280,250)" font-size="50px">Made By!</text>
+                </a>
+            </svg>
+        </div>
+    </section>
+</body>
+</html>

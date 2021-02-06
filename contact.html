@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWORK</title>
+    <link rel="stylesheet" href="h.css">
+    <style>
+        input[type=text],[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #d17600;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #ffbb00;
+}
+
+/* Add a background color and some padding around the form */
+.contact{
+    display: grid;
+    grid-template-columns: 300px 200px 300px;
+    grid-column-gap: 60px ;
+}
+.iner {
+  border-radius: 5px;
+  color: black;
+  background-color: #b8b8b852;
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+}
+.ner{
+    border-radius: 5px;
+    color: black;
+    background-color: #b8b8b8;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+}
+.er{
+    border-radius: 5px;
+    color: black;
+    background-color: #dddddd;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+}
+option{
+    font-size: 15px;
+    border-width: 5px;
+    border-color: teal;
+    border-style: solid;
+}
+    </style>
+</head>
+<script>
+    function dis(){
+        document.getElementById("contact").innerHTML="Thank you we will contact you soon."
+    }
+</script>
+<body>
+    <main class="container">
+        
+        <section class="content-wrapper" style="height: 800px;">
+            <div class="main-content">
+                <div class="topnav">
+                    <a href="index.html" class="nav-links first"> <span class="logo-orange">Ayush</span> <span class="logo">Panda</span></a>
+                    <a href="intro.html" class="nav-links">Introduction</a>
+                    <a href="aboutme.html" class="nav-links">About Me</a>
+                    <a href="Porto.html" class="nav-links">My Portfolio</a>
+                    <a href="contact.html" class="nav-links">Contact Me</a>
+                </div>
+                <div class="contact">
+                    <div class="iner">
+                        <form>
+                            <label for="" style="color: wheat;"><i><b>Ask me</b></i></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        <input type="email" id="mail" name="lastname" placeholder="Your email" required>
+                        <select id="country" name="country" required >
+                            <option value="null">Select Your Country</option>
+                            <option value="india">India</option>
+                            <option value="japan">Japan</option>
+                            <option value="south korea">South Korea</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <textarea id="subject" name="subject" placeholder="Reason " style="height:70px" required></textarea>
+                      
+                        <input type="submit" value="Submit" onclick="window.open('contactask.html')">
+                      
+                        </form>
+                      </div>
+                      <div class="ner">
+                        <form>
+                            <label for=""><i>Feedback</i></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        <input type="email" id="mail" name="lastname" placeholder="Your email" required>
+                        <select id="country" name="country" required>
+                            <option value="null">Rate your Experience</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <textarea id="subject" name="subject" placeholder="Suggestion/Compliment " style="height:70px" required></textarea>
+                      
+                        <input type="submit" value="Submit" onclick="window.open('contactfeed.html')">
+                      
+                        </form>
+                      </div>
+                      <div class="er">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.4533959183718!2d84.94567358045335!3d21.821088529954533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQ5JzE2LjIiTiA4NMKwNTYnNDUuMSJF!5e1!3m2!1sen!2sin!4v1610712918709!5m2!1sen!2sin"
+                    width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      </div>
+                    </div>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

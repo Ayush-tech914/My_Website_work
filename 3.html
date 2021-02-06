@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWORK</title>
+    <link rel="stylesheet" href="h.css">
+</head>
+<style>
+
+    .form-div {
+     text-align: center;
+    }
+    form {
+     background-color: rgb(43, 43, 43);
+     padding: 1em;
+     display: inline-block;
+     min-width: 80%;
+     box-shadow: 2px 4px 15px rgb(77, 77, 77);
+    }
+    h2 {
+     color: #f5ab6f;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-style: italic;
+    }
+    input {
+     margin-top: 0.5em;
+     outline: none;
+     padding: 0.75em;
+     border: none;
+     min-width: 80%
+    }
+    .data-entry:focus {
+     background-color: #d10000;
+     color: #fff;
+    }
+    input.btn {
+     min-width: 0;
+     color: #fff;
+     background-color: #22c8de;
+     padding: 1em 2em;
+     margin-top: 1.5em;
+     font-weight: bold;
+     border-radius: 10px;
+    }
+    input.btn:active {
+     box-shadow: inset 1px 1px 5px #333;
+    }
+    input.btn:hover {
+     background-color: #2268fe;
+    }
+    input[type=radio]{
+        min-width: 1%;
+    }
+    #show{
+        font-size:;
+    }
+</style>
+<body>
+    <main class="container">
+        
+        <section class="content-wrapper">
+            <div class="main-content">
+                <div class="topnav">
+                    <a href="index.html" class="nav-links first"> <span class="logo-orange">Ayush</span> <span class="logo">Panda</span></a>
+                    <a href="intro.html" class="nav-links">Introduction</a>
+                    <a href="aboutme.html " class="nav-links">About Me</a>
+                    <a href="Porto.html" class="nav-links">My Portfolio</a>
+                    <a href="contact" class="nav-links">Contact Me</a>
+                </div>   
+                <div>
+                    
+    <div class="form-div" id="show">
+        <form>
+        <h2>Give your Contact Details</h2>
+        <div id="d1">
+            <input class="data-entry" type="text" name="name" placeholder="Name" id="name">
+        </div>
+        <div>
+            <input class="data-entry" type="email" name="email" placeholder="Email" id="email">
+        </div>
+        <div>
+            <input class="data-entry" type="text" name="number" placeholder="Contact No" id="phone">
+        </div>
+        <div>
+            <label for="gen" id="gender">Gender:</label>
+            <input class="data-entry" type="radio" name="gen" id="male">Male
+            <input class="data-entry" type="radio" name="gen" id="female">Female
+        </div>
+        <div>
+        <input class="btn" type="submit" value="Hire Up" onclick="window.open('3a.html')">
+        </div>
+        </form>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

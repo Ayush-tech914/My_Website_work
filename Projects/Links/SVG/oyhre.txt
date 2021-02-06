@@ -1,0 +1,25 @@
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>red,orange,yellow,green,blue,indigo,violet</div>
+        <div>violet,indigo,green,blue, red,orange,yellow,</div>
+        <div> violet,indigo,green,blue,</div>
+
+        
+    <section class="conta">
+        <div>
+            <svg width="300" height="300"></svg>
+            <span></span>
+        </div>
+        <div>
+            <svg width="300" height="300"></svg>
+            <span></span>
+        </div>
+        <div>
+            <svg width="300" height="300"></svg>
+            <span></span>
+        </div>
+    </section>

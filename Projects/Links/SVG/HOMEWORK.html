@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color:crimson;
+        font-size: 30px;
+        background-image: linear-gradient(315deg, red,orange,yellow,green,blue,indigo,violet) ;
+        background-size: cover;
+        text-align: center;
+    }
+    .conta{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 100px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    div{
+        width: 300px;
+        height: 300px;
+    }
+    .cr{
+        background-image: radial-gradient(rgb(221, 1, 1) , red 29%,orange,yellow );
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    span:hover{
+        color: rgb(255, 255, 255);
+    }
+</style>
+<body>
+    <marquee behavior="speed" direction=""><h1> Scalable Vector Graphics</h1></marquee>
+    <section class="conta">
+        <div class="cr">
+            <svg height="300px">
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:rgb(255, 30, 0);
+                    stop-opacity:0" />
+                    <stop offset="100%" style="stop-color:rgb(255, 0, 0);stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+                <circle cx="150" cy="150" r="60" stroke="green" stroke-width="0" fill="url(#grad1)"></circle>
+            </svg>
+            <span>SUN(Circle)</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <rect x="95" y="75" width="100" height="200" style="fill:rgba(223, 223, 223, 0.842);stroke-width:10;stroke:rgb(0,0,0)"></rect>
+           </svg>
+           <span>RECTANGLE(Mirror)</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <ellipse cx="200" cy="100" rx="140" ry="85" style="fill:yellow;stroke:purple;stroke-width:7" transform="rotate(30 20,40)"></ellipse>
+            </svg>
+            <span>ELLIPSE</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <line x1="250" y1="301" x2="52" y2="100" stroke="aquamarine" stroke-width="5"></line>
+            </svg>
+            <span>LINE</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <polygon points="70,100 250,200 160,210" stroke="aqua" stroke-width="5" fill="khaki"></polygon>
+            </svg>
+            <span>POLYGON(Triangle)</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <polygon points="210,50 300,100 170,250 123,234" style="fill:rgb(31, 31, 31);stroke:rgb(255, 166, 49);stroke-width:5"></polygon>
+            </svg>
+            <span>POLYGON(Quadrilateral)</span>
+        </div>
+        <div>
+            <svg width="300" height="300" style="padding-left: 50px;">
+                <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:rgb(0, 99, 0);stroke:rgb(224, 109, 224);stroke-width:5;fill-rule:nonzero;" ></polygon>
+            </svg>
+            <span>POLYGON(Star)</span>
+        </div>
+        <div>
+            <svg width="300" height="300" style="padding-left: 50px;">
+                <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:rgb(0, 190, 190);stroke:rgb(224, 109, 109);stroke-width:5;fill-rule:evenodd;" ></polygon>
+            </svg>
+            <span>POLYGON(Star-cen)</span>
+        </div>
+        <div>
+            <svg width="300" height="300">
+                <a href="HOMEWORK2.html" >
+                    <text x="75" y="100" fill="rgb(10, 48, 141)" transform="rotate(30 20,40)">Making Websites!</text>
+                </a>
+            </svg>
+            <span>TEXT</span>
+        </div>
+    </section>
+</body>
+</html>

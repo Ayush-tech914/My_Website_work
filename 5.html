@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWORK</title>
+    <link rel="stylesheet" href="h.css">
+</head>
+<style>
+    .choose{
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    #choos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 200px 200px 40px;
+        grid-row-gap: 50px;
+        grid-column-gap:0px;
+    }
+    .oo{
+        width: 300px;
+        border-color: rgb(255, 255, 255);
+        border-width: 10px;
+        border-style: double;
+        text-align: center;
+        animation-name: example3;
+        animation-duration: 10s;
+        animation-delay: 0s;
+    }
+    #d1 {
+        margin-right: 70px;
+        color: rgb(255, 255, 255);
+        font-style: bold;
+        font-size: 30px;
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+        animation-name: example1;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-iteration-count: 10000;
+    }
+    input{
+        margin-right: 110px;
+        margin-left: 50px;
+        border-radius: 50px;
+        width: 200px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+    .but:hover{
+        background-image: linear-gradient(red,orange,yellow,orange,red);
+        font-size: 20px;
+    }
+    #heading{
+        color: rgba(255, 255, 255, 0);
+        animation-name: example2;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-iteration-count: 10000;
+    }
+    h1{
+        color: rgb(103, 172, 241);
+        margin-top: 70px;
+    }
+    img{
+        transition: transform .2s;
+        width: 300px;
+        height: 180px;
+    }
+    img:hover{
+        -ms-transform: scale(2.5); /* IE 9 */
+        -webkit-transform: scale(2.5); /* Safari 3-8 */
+        transform: scale(1.75); 
+    }
+    
+    @keyframes example1 {
+        from {background-color: red;}
+        to {background-color: rgb(17, 0, 255);}
+    }
+    @keyframes example2 {
+        from {color: rgb(0, 132, 255);}
+        to {color: rgb(255, 123, 0);}
+    }
+    @keyframes example3 {
+        from {border-color: rgb(0, 0, 0);}
+        to {border-color: rgb(255, 255, 255);}
+    }
+
+    a{
+        text-decoration: none;
+        text-decoration-color: none;
+    }
+    p{
+        font-style: italic;
+    }
+</style>
+<body>
+    <main class="container" id="back">
+        <section class="choose">
+            <h2 style="margin-left: 510px; " id="heading">My Projects</h2>
+            <div id="choos">
+                <div class="oo" style="border-radius: 100px; width: 160px; height: 205px; margin-left: 50px;"><img src="me.jpeg" alt="" style="border-radius: 100px; width: 160px; height: 205px;"></div>
+                <div class="oo">
+                    <img src="Projects/Images/join.png" alt="JOIN" onclick="window.open('Projects/Links/join/Homework.html')">
+                </div>
+                <div class="oo"><a href="https://a.impartus.com/ilc/#/profile/2409693"><h1>Avinash Patel</h1></a>
+                    <p>My Tutor in Codeyoung</p>
+                </div>
+                <div class="oo"><a href="https://a.impartus.com/ilc/#/profile/2447656"><h1>Ayush Panda</h1></a>
+                    <p>Me Student in Codeyoung</p>
+                </div>
+                <div class="oo">
+                    <img src="Projects/Images/SVG.png" alt="SVG" onclick="window.open('Projects/Links/SVG/HOMEWORK.html')">
+                </div>
+                <div class="oo" style="border-radius: 100px; width: 160px; margin-left: 70px;"><img src="sir.png" alt="" style="border-radius: 100px; width: 160px;"></div>
+                <input type="button" value="Previous" class="but" onclick="window.open('4.html')">
+                <input type="button" value="૨" id="d1" disabled>
+                <input type="button" value="Home" class="but" onclick="window.open('index.html')">
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
